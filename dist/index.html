@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yapee - Mua sắm trực tuyến</title>
+    <meta name="description" content="Ứng dụng mua sắm trực tuyến hàng đầu Việt Nam với hàng triệu sản phẩm chất lượng" />
+    <meta name="author" content="Yapee" />
+    <meta name="keywords" content="mua sắm, online, thương mại điện tử, Việt Nam, sản phẩm" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#ee4d2d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Yapee" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-TileColor" content="#ee4d2d" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/icons/icon-192x192.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.svg" />
+    <link rel="mask-icon" href="/icons/icon-192x192.svg" color="#ee4d2d" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Yapee - Mua sắm trực tuyến" />
+    <meta property="og:description" content="Ứng dụng mua sắm trực tuyến hàng đầu Việt Nam với hàng triệu sản phẩm chất lượng" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/icons/icon-512x512.svg" />
+    <meta property="og:url" content="https://yapee.vn" />
+    <meta property="og:site_name" content="Yapee" />
+    <meta property="og:locale" content="vi_VN" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yapee_vn" />
+    <meta name="twitter:title" content="Yapee - Mua sắm trực tuyến" />
+    <meta name="twitter:description" content="Ứng dụng mua sắm trực tuyến hàng đầu Việt Nam" />
+    <meta name="twitter:image" content="/icons/icon-512x512.svg" />
+    <script type="module" crossorigin src="/assets/index-B_z83aGI.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-DrHQLvTy.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-S1POobSh.js">
+    <link rel="modulepreload" crossorigin href="/assets/chart-vendor-Bfyd95vO.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabase-vendor-C-7U-qZP.js">
+    <link rel="modulepreload" crossorigin href="/assets/form-vendor-CeA2iSy3.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CiiTqGlL.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

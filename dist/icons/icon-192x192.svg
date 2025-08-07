@@ -1,0 +1,20 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" rx="24" fill="#ee4d2d"/>
+  
+  <!-- Shopping bag icon -->
+  <g transform="translate(48, 48)">
+    <!-- Bag body -->
+    <path d="M20 32L16 88C15.8 90.2 17.8 92 20 92H76C78.2 92 80.2 90.2 80 88L76 32H20Z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Bag handles -->
+    <path d="M32 32V24C32 17.4 37.4 12 44 12H52C58.6 12 64 17.4 64 24V32" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Yapee text -->
+    <text x="48" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ee4d2d">Y</text>
+  </g>
+  
+  <!-- Corner decoration -->
+  <circle cx="168" cy="24" r="8" fill="white" opacity="0.3"/>
+  <circle cx="24" cy="168" r="6" fill="white" opacity="0.2"/>
+</svg>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Routes - Yapee Vietnam Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .route-test {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .route-test a {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .route-test a:hover {
+            background: #0056b3;
+        }
+        .status {
+            margin-left: 10px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Routes - Yapee Vietnam Clone</h1>
+    <p>Nhấp vào các liên kết dưới đây để kiểm tra xem có route nào bị lỗi 404 không:</p>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/" target="_blank">Trang chủ (/)</a>
+        <span class="status">Trang chính</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/login" target="_blank">Đăng nhập (/login)</a>
+        <span class="status">Xác thực</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/register" target="_blank">Đăng ký (/register)</a>
+        <span class="status">Xác thực</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/forgot-password" target="_blank">Quên mật khẩu (/forgot-password)</a>
+        <span class="status">Xác thực</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/products" target="_blank">Danh sách sản phẩm (/products)</a>
+        <span class="status">Sản phẩm</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/search" target="_blank">Tìm kiếm (/search)</a>
+        <span class="status">Tìm kiếm</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/cart" target="_blank">Giỏ hàng (/cart)</a>
+        <span class="status">Giỏ hàng</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/wishlist" target="_blank">Danh sách yêu thích (/wishlist)</a>
+        <span class="status">Yêu thích</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/about" target="_blank">Về chúng tôi (/about)</a>
+        <span class="status">Thông tin</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/contact" target="_blank">Liên hệ (/contact)</a>
+        <span class="status">Thông tin</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/help" target="_blank">Trợ giúp (/help)</a>
+        <span class="status">Hỗ trợ</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/terms-of-service" target="_blank">Điều khoản dịch vụ (/terms-of-service)</a>
+        <span class="status">Pháp lý</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/privacy-policy" target="_blank">Chính sách bảo mật (/privacy-policy)</a>
+        <span class="status">Pháp lý</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/flash-sale" target="_blank">Flash Sale (/flash-sale)</a>
+        <span class="status">Khuyến mãi</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/seller-center" target="_blank">Trung tâm bán hàng (/seller-center)</a>
+        <span class="status">Bán hàng</span>
+    </div>
+    
+    <h2>Test các route không tồn tại (nên hiển thị 404):</h2>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/nonexistent-page" target="_blank">Trang không tồn tại (/nonexistent-page)</a>
+        <span class="status error">Nên hiển thị 404</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/random-invalid-route" target="_blank">Route không hợp lệ (/random-invalid-route)</a>
+        <span class="status error">Nên hiển thị 404</span>
+    </div>
+    
+    <div class="route-test">
+        <a href="http://localhost:8080/admin/invalid" target="_blank">Admin route không hợp lệ (/admin/invalid)</a>
+        <span class="status error">Nên hiển thị 404</span>
+    </div>
+    
+    <h2>Hướng dẫn kiểm tra:</h2>
+    <ol>
+        <li>Nhấp vào từng liên kết ở trên</li>
+        <li>Kiểm tra xem trang có tải được không</li>
+        <li>Nếu trang hiển thị lỗi 404, ghi chú lại route đó</li>
+        <li>Kiểm tra console của browser (F12) để xem có lỗi JavaScript không</li>
+        <li>Các route "Nên hiển thị 404" phải hiển thị trang NotFound</li>
+    </ol>
+    
+    <p><strong>Lưu ý:</strong> Một số route yêu cầu đăng nhập (như /profile, /checkout) sẽ chuyển hướng đến trang đăng nhập thay vì hiển thị 404.</p>
+</body>
+</html>

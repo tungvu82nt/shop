@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="#ee4d2d"/>
+  
+  <!-- Main shopping bag -->
+  <g transform="translate(128, 128)">
+    <!-- Bag shadow -->
+    <path d="M60 92L52 236C51.6 241.2 55.6 245 60 245H196C200.4 245 204.4 241.2 204 236L196 92H60Z" fill="#cc3d1f" opacity="0.3"/>
+    
+    <!-- Bag body -->
+    <path d="M56 88L48 232C47.6 237.2 51.6 241 56 241H192C196.4 241 200.4 237.2 200 232L192 88H56Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+    
+    <!-- Bag handles -->
+    <path d="M80 88V64C80 46.4 94.4 32 112 32H136C153.6 32 168 46.4 168 64V88" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Inner bag details -->
+    <rect x="64" y="104" width="120" height="4" rx="2" fill="#f0f0f0"/>
+    <rect x="64" y="120" width="120" height="4" rx="2" fill="#f0f0f0"/>
+    
+    <!-- Yapee logo text -->
+    <text x="124" y="180" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#ee4d2d">Yapee</text>
+    
+    <!-- Small decorative elements -->
+    <circle cx="88" cy="200" r="3" fill="#ee4d2d" opacity="0.6"/>
+    <circle cx="160" cy="200" r="3" fill="#ee4d2d" opacity="0.6"/>
+  </g>
+  
+  <!-- Corner decorations -->
+  <circle cx="448" cy="64" r="20" fill="white" opacity="0.3"/>
+  <circle cx="64" cy="448" r="16" fill="white" opacity="0.2"/>
+  <circle cx="448" cy="448" r="12" fill="white" opacity="0.15"/>
+  
+  <!-- Additional design elements -->
+  <path d="M400 120L420 140L400 160" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.2"/>
+  <path d="M112 400L92 420L112 440" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.2"/>
+</svg>
